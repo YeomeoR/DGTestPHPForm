@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="form_style.css">
     <title>PHP Test Form</title>
 </head>
 <body>
@@ -36,12 +36,13 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
         // submit the email
         $to = "email@yeomeo.dev";
         $body = "";
+        $message = '';
         $file = "";
         
-        $body .= "From: ".$first_name."\r\n";
-        $body .= "Email: ".$email."\r\n";
-        $body .= "Message: ".$message."\r\n";
-        $body .= $first_name ." ". $last_name." "."\r\n".$address_line_1."\r\n".$town."\r\n".$number."\r\n";
+        $message .= "From: ".$first_name."\r\n";
+        $message .= "Email: ".$email."\r\n";
+        $message .= "Message: ".$message."\r\n";
+        $message .= $first_name ." ". $last_name." "."\r\n".$address_line_1."\r\n".$town."\r\n".$number."\r\n";
         $body .= $file;
         
         mail($to, $body, $message); // add uploaded file: mail($to, $body, $message, $file);
