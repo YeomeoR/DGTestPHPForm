@@ -10,7 +10,7 @@ Basic validation limited to email, using PHP.
 
 HTML validates inputs automatically unless 'switched off'. In this case, PHP email validation takes over.
 
-<!-- Project is also served at www.yeomeo.dev/php-test-form ??? -->
+Project is also served at https://yeomeo.dev/home_page.php
 
 
 
