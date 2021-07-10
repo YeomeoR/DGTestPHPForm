@@ -19,7 +19,7 @@ The layout is responsive, in that when on a mobile device, it narrows to a singl
 
 Styling is basic but with slightly more character than the test sample.
 
-Project is also served and is live, on my portfolio website at https://yeomeo.dev/home_page.php 
+Project is also live and served on my portfolio website at https://yeomeo.dev/home_page.php 
 
 
 
