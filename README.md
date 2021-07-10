@@ -8,12 +8,23 @@ To run this app, clone this repository and start server on localhost:8000/home_p
 
 Basic validation limited to email, using PHP. 
 
-HTML validates inputs automatically unless 'switched off'. In this case, PHP email validation takes over.
+HTML validates inputs automatically unless 'switched off'. In which case, PHP email validation takes over as per the code.
 
 Select a file to upload from device/computer. This sent with the email when form is submitted but will be sent (in this instance) 
 to the 'assets/images/' folder of the cloned project, in the text editor.
 
-Project is also served at https://yeomeo.dev/home_page.php
+The information from the input fields on the form will be sent to an email address (in this instance: email@yeomeo.dev)
+
+The layout is responsive, in that when on a mobile device, it narrows to a single column.
+
+Styling is basic but with slightly more character than the test sample.
+
+Project is also served and is live, on my portfolio website at https://yeomeo.dev/home_page.php 
+
+
+
+
+https://yeomeo.dev 
 
 
 
