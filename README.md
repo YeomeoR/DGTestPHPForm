@@ -12,7 +12,7 @@ HTML validates inputs automatically unless 'switched off'. In which case, PHP em
 
 Select a file to upload from device/computer. This sent with the email when form is submitted but will be sent (in this instance) 
 to the 'assets/images/' folder of the cloned project, in the text editor, not the email recipient. On screen display showing the 
-details of the upload and sent file in the form of an array in plain text using a simple function and 'print_r' between <pre> tags, 
+details of the upload and sent file in the form of an array in plain text using a simple function and 'print_r' between 'pre' tags, 
 test_form.php, lines 70-74 (just for information).
 
 The information from the input fields on the form will be sent to an email address (in this instance: email@yeomeo.dev)
