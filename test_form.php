@@ -41,8 +41,8 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
         
         $message .= "From: ".$first_name."\r\n";
         $message .= "Email: ".$email."\r\n";
-        $message .= "Message: ".$message."\r\n";
-        $message .= $first_name ." ". $last_name." "."\r\n".$address_line_1."\r\n".$town."\r\n".$number."\r\n";
+        $body .= "Message: ".$message."\r\n";
+        $message .= $first_name ." ". $last_name." "."\r\n".$address_line_1."\r\n".$town."\r\n".$number."\r\n".$message;
         $body .= $file;
         
         mail($to, $body, $message); // add uploaded file: mail($to, $body, $message, $file);
