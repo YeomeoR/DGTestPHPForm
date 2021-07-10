@@ -16,6 +16,7 @@ details of the upload and sent file in the form of an array in plain text using 
 test_form.php, lines 70-74 (just for information).
 
 The information from the input fields on the form will be sent to an email address (in this instance: email@yeomeo.dev)
+To change the recipient email address, amend: test_form.php line 37.
 
 The layout is responsive, in that when on a mobile device, it narrows to a single column.
 
