@@ -10,6 +10,8 @@
 <body>
 
 <?php
+
+
 // echo "<pre>";
 // print_r($_POST);
 // echo "</pre>";
@@ -41,7 +43,7 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
         
         $message .= "From: ".$first_name."\r\n";
         $message .= "Email: ".$email."\r\n";
-        $body .= "Message: ".$message."\r\n";
+        $message .= "Message: ".$message."\r\n";
         $message .= $first_name ." ". $last_name." "."\r\n".$address_line_1."\r\n".$town."\r\n".$number."\r\n".$message;
         $body .= $file;
         
@@ -65,8 +67,10 @@ if(isset($_POST['email']) && $_POST['email'] != ''){
 
 if(isset($_FILES['usercv'])){
     pre_r($_FILES);
-    move_uploaded_file($_FILES['usercv']['tmp_name'], 'assets/images/'.$_FILES['usercv']['name']);
+    move_uploaded_file($_FILES['usercv']['tmp_name'], 'assets/'.$_FILES['usercv']['name']);
 }
+
+// just to show the details of the confirmed file uploaded to the assets folder in the text editor
 function pre_r($array){
     echo "<pre>";
         print_r($array);
@@ -78,7 +82,10 @@ function pre_r($array){
 <?php 
 if($message_sent):
     ?>
-    <h3>Thanks. You sent your information to yeomeo.dev</h3>
+    <div class="completed-screen">
+
+        <h3>Thanks. You sent your information to yeomeo.dev</h3>
+</div>
 <?php 
 else:
 ?>
