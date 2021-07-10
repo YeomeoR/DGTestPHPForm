@@ -11,7 +11,7 @@ Basic validation limited to email, using PHP.
 HTML validates inputs automatically unless 'switched off'. In which case, PHP email validation takes over as per the code.
 
 Select a file to upload from device/computer. This sent with the email when form is submitted but will be sent (in this instance) 
-to the 'assets/images/' folder of the cloned project, in the text editor.
+to the 'assets/images/' folder of the cloned project, in the text editor, not the email recipient.
 
 The information from the input fields on the form will be sent to an email address (in this instance: email@yeomeo.dev)
 
